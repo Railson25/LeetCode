@@ -14,3 +14,12 @@ Array.prototype.last = function (){
 const minhaMatriz = [1, 2,3,4,45];
 const resultado = minhaMatriz.last();
 console.log(resultado)
+
+// Formas de reduzir o codigo acima utilizando operador ternario
+
+Array.prototype.last = function() {
+    return this.length ? this[this.length - 1] : 1
+}
+const resultado2 = minhaMatriz.last();
+
+console.log(resultado2)
